@@ -16,7 +16,7 @@ const useVideos = (defaultSearchTerm) => {
 
     useEffect(() => {
         search(defaultSearchTerm);
-    },[]);
+    },[defaultSearchTerm]);
 
     return [videos, search];
 }
